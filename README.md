@@ -1,16 +1,26 @@
-## Hi there 👋
+# Сайт-визитка психолога Ксении Могилевич
 
-<!--
-**kseniamog-psy/kseniamog-psy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Статический сайт: `index.html` + папка `assets/` с картинками. Без сборки и зависимостей.
 
-Here are some ideas to get you started:
+## Как выложить на GitHub Pages (получить живую ссылку)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+1. На github.com нажмите **New repository**, назовите, например, `ksenia-psy` (репозиторий публичный).
+2. Нажмите **uploading an existing file** и перетащите файлы: `index.html`, `README.md` и папку `assets` целиком.
+3. Нажмите **Commit changes**.
+4. Откройте **Settings → Pages**. В разделе **Build and deployment** выберите *Deploy from a branch*, ветку `main`, папку `/ (root)`, сохраните.
+5. Через 1–2 минуты сайт будет доступен по адресу `https://ВАШ_ЛОГИН.github.io/ksenia-psy/`.
+
+## Что нужно заменить
+
+В `index.html` найдите комментарий «ЗАМЕНИТЕ ссылки» (блок «Контакты») и впишите:
+- `https://t.me/ВАШ_НИК` — ваш Telegram;
+- `https://wa.me/7ВАШ_НОМЕР` — WhatsApp (номер без плюса и пробелов);
+- ссылку на ваш профиль в Max.
+
+## Сертификаты в блоке «Обо мне»
+
+Под каждым учебным заведением есть кнопка «Посмотреть сертификат». Сканы уже лежат в папке `assets/certs/`. Чтобы заменить один из них, положите файл с тем же именем (список в `assets/certs/README.txt`). Если файла нет, показывается надпись «Скан сертификата скоро появится здесь».
+
+## Интерактив «Немного ближе к себе»
+
+Вопросы лежат в массиве `QUESTIONS` в конце `index.html`. Сейчас там один вопрос; чтобы добавить второй и третий, скопируйте блок `{ title: ..., options: [...] }` через запятую.
